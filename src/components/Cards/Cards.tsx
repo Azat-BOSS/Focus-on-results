@@ -21,8 +21,6 @@ const Cards: FC = () => {
     dispatch(getClothesCart(card.id))
   }, [dispatch])
 
-  console.log(clothesPag)
-
   return (
     <div className={cards.cards}>
       <div className={cards.cards__container}>

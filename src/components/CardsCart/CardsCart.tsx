@@ -12,7 +12,7 @@ const CardsCart: FC = () => {
     (clothesCart, totalCost) => ({clothesCart, totalCost})
   )
 
-  const {clothesCart, totalCost} = useAppSelector(cardsCardSelector)
+  const {clothesCart} = useAppSelector(cardsCardSelector)
 
   const addCard = useCallback((card: number | any) => {
     dispatch(incrementItems(card))
