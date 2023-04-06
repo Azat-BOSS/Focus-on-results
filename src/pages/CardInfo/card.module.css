@@ -108,7 +108,6 @@
     text-decoration: underline;
     transition: .4s ease opacity;
     width: 200px;
-    margin-left: 30px;
   }
   .cardInfo__cart {
     position: absolute;
@@ -154,6 +153,7 @@
     max-width: 400px;
     line-height: 1.5;
     margin-bottom: 50px;
+    padding: 0;
   }
   .cardInfo__link {
     font-size: 15px;
@@ -161,7 +161,7 @@
     text-decoration: underline;
     transition: .4s ease opacity;
     width: 200px;
-    margin-left: 30px;
+    margin-left: 0;
   }
   .cardInfo__cart {
     position: absolute;
