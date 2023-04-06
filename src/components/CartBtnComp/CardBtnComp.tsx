@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {FC} from 'react';
 import cart from "../../assets/icons/cart.svg";
 import cartS from "./cart.module.css"
 import {RootState, useAppSelector} from "../../services";
 import {useNavigate} from "react-router-dom";
 import {createSelector} from "@reduxjs/toolkit";
-const CartBtnComp = () => {
+const CartBtnComp: FC = () => {
   const navigate = useNavigate()
   const cardsCardSelector = createSelector(
     (state: RootState) => state.cartSlice.clothesCart,

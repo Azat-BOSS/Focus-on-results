@@ -1,4 +1,4 @@
-import React, {useCallback, useMemo} from 'react';
+import React, {useCallback, useMemo, FC} from 'react';
 import card from "./card.module.css"
 import {Link, useParams} from "react-router-dom";
 import {createSelector} from "@reduxjs/toolkit";
@@ -8,7 +8,7 @@ import {TClothe} from "../../utils/types/type";
 import Button from "../../ui/Button/Button";
 import {getClothesCart} from "../../services/reducers/cartSlice";
 import CartBtnComp from "../../components/CartBtnComp/CardBtnComp";
-const CardInfo = () => {
+const CardInfo: FC = () => {
   const dispatch = useAppDispatch()
   const {id} = useParams()
   const dataSelector = createSelector(
