@@ -33,4 +33,8 @@ npm run build
 npm start
 ```
 
+Деплой на Netlify:
+[website](https://deploy-preview-2--sprightly-taiyaki-b52bb1.netlify.app/) </br>
+UPD: ↑ изменил ссылку на актуальную.
+
 
