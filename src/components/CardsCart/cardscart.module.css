@@ -1,0 +1,39 @@
+.cards__items {
+  width: 90rem;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  border: .1rem dashed black;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.cards__title__items {
+  font-size: 5rem;
+}
+.cards__cost {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1280px) {
+  .cards__items {
+    width: 100%;
+    max-width: 400px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+  }
+  .cards__title__items {
+    font-size: 20px;
+  }
+  .cards__cost {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}

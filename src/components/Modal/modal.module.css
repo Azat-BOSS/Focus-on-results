@@ -1,0 +1,28 @@
+.modal {
+  transition: .4s ease all;
+}
+.modal_active {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.modal__overlay_active {
+  transition: .4s ease all;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+.modal__overlay {
+  transition: .4s ease all;
+  position: fixed;
+  background-color: transparent;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -100;
+}

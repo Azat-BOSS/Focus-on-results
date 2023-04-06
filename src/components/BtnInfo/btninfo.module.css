@@ -1,0 +1,51 @@
+.btn__btns {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+}
+.btn__modal__btn {
+  width: 5rem;
+  height: 5rem;
+  transition: .4s ease opacity;
+}
+.btn__modal__btn:hover {
+  opacity: .7;
+}
+.btn__icon__modal {
+  width: 5rem;
+  height: 5rem;
+}
+.btn__cart{
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d7d7d7;
+  transition: .4s ease opacity;
+  position: relative;
+}
+.btn__cart:hover {
+  opacity: .4;
+}
+.btn__cart__icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+@media screen and (max-width: 1280px){
+  .btn__btns {
+    column-gap: 10px;
+  }
+  .btn__modal__btn {
+    width: 40px;
+    height: 40px;
+    transition: .4s ease opacity;
+  }
+  .btn__icon__modal {
+    width: 40px;
+    height: 40px;
+  }
+}

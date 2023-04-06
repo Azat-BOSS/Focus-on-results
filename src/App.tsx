@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, FC} from 'react';
+import {Routes, Route} from "react-router-dom";
+import {useAppDispatch} from "./services";
+import {getBrands} from "./services/reducers/dataSlice";
+import {getAllClothes} from "./services/reducers/cartSlice";
+import {publicRoutes} from "./router";
+import {getClothes} from "./services/reducers/filtrationSlice";
 
-function App() {
+import clothesData from "./assets/products.json"
+import brandsData from "./assets/brands.json"
+
+const App: FC = () => {
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    dispatch(getClothes(clothesData))
+    dispatch(getBrands(brandsData))
+    dispatch(getAllClothes(clothesData))
+  }, [dispatch])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        {publicRoutes.map(({path, component: Component}, index) => (
+          <Route
+            element={<Component/>}
+            path={path}
+            key={index}/>
+        ))}
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;

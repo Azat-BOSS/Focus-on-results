@@ -1,0 +1,11 @@
+.select {
+  width: 30rem;
+  height: 5rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .select {
+    width: 200px;
+    height: 30px;
+  }
+}

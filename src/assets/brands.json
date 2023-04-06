@@ -1,0 +1,52 @@
+[
+  {
+    "id": 0,
+    "value": "Все бренды",
+    "label": "All Brands"
+  },
+  {
+    "id": 1,
+    "value": "Product 1",
+    "label": "Brand 1"
+  },
+  {
+    "id": 2,
+    "value": "Product 2",
+    "label": "Brand 2"
+  },
+  {
+    "id": 3,
+    "value": "Product 3",
+    "label": "Brand 3"
+  },
+  {
+    "id": 4,
+    "value": "Product 4",
+    "label": "Brand 4"
+  },
+  {
+    "id": 5,
+    "value": "Product 5",
+    "label": "Brand 5"
+  },
+  {
+    "id": 6,
+    "value": "Product 6",
+    "label": "Brand 6"
+  },
+  {
+    "id": 7,
+    "value": "Product 7",
+    "label": "Brand 7"
+  },
+  {
+    "id": 8,
+    "value": "Product 8",
+    "label": "Brand 8"
+  },
+  {
+    "id": 9,
+    "value": "Product 9",
+    "label": "Brand 9"
+  }
+]

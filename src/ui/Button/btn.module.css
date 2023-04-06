@@ -1,0 +1,43 @@
+.btn {
+  font-size: 2.2rem;
+  width: 20rem;
+  height: 6rem;
+  border: .2rem solid black;
+  font-weight: 500;
+  transition: .4s ease all;
+}
+.btn_disabled {
+  font-size: 2.2rem;
+  width: 20rem;
+  height: 6rem;
+  border: .2rem solid rgba(147, 147, 147, 0.58);
+  font-weight: 500;
+  cursor: default;
+}
+.btn:hover {
+  box-shadow: inset 0 0 0 30px #000000;
+  color: white;
+}
+@media screen and (max-width: 1280px) {
+  .btn {
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    font-weight: 500;
+    transition: .4s ease all;
+    margin-bottom: 20px;
+  }
+  .btn_disabled {
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    border: .2rem solid rgba(147, 147, 147, 0.58);
+    font-weight: 500;
+    cursor: default;
+  }
+  .btn:hover {
+    box-shadow: inset 0 0 0 30px #000000;
+    color: white;
+  }
+}
